@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    /*### Primary*/
+    --Very-dark-blue-main-background: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+    --Soft-violet-accent: hsl(277, 64%, 61%);
+    /*### Neutral*/
+    --White-main-heading-stats: hsl(0, 0%, 100%);
+    --Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+/*font-family 01
+- Weights: 400, 700
+*/
+
+.inter {
+    font-family: "Inter", serif;
+}
+
+/*font-family 02
+- Weights: 400
+*/
+
+.lexend-deca {
+    font-family: "Lexend Deca", serif;
+    font-weight: 300;
+}
+
+
+body {
+    font-size: .9375em;
+    background-color: var(--Very-dark-blue-main-background);
+}
+
+main #stats-card-component {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#stats-card-component {
+    width: 330px;
+    height: 785px;
+    background-color: var(--Dark-desaturated-blue-card-background);
+    margin: 45px auto;
+    border-radius: 10px;
+}
+
+.row #container-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: var(--Soft-violet-accent);
+}
+
+#mobile,
+#desktop {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(50%) contrast(58%) brightness(125%);
+    mix-blend-mode: multiply;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#container-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#purple-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: 242px;
+    background-color: var(--Soft-violet-accent);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+#desktop {
+    display: none;
+}
+
+
+#container--information {
+    margin-top: 1em;
+    padding: 1em 2em;
+    text-align: center;
+}
+
+#stats-preview-information #stats-title {
+    font-size: 2.2em;
+    margin-bottom: 1.1em;
+    color: var(--White-main-heading-stats);
+}
+
+#stats-title #purple-txt {
+    color: var(--Soft-violet-accent);
+}
+
+#stats-preview-information #stats-information {
+    margin-bottom: 1.4em;
+    font-size: 1.1em;
+    line-height: 21px;
+    color: var(--Slightly-transparent-white-main-paragraph);
+}
+
+#block-information-stats {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#block-information-stats ul {
+    margin: 1.1em;
+}
+
+.stats-info {
+    width: 100px;
+    font-size: 1.5em;
+    color: #fff;
+    margin: 1.3em;
+}
+
+.up-Name {
+    font-weight: 700;
+}
+
+.small-name {
+    font-size: .7em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--Slightly-transparent-white-main-paragraph);
+}
+
+
+@media (min-width: 1024px) {
+
+
+    main #stats-card-component {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+    #stats-card-component {
+        width: 1008px;
+        height: 441px;
+        margin: 7% auto 0 auto;
+        border-radius: 10px;
+    }
+
+
+    .row #container-image {
+        width: 500px;
+        height: 441px;
+    }
+
+    #mobile,
+    #desktop {
+        height: 441px;
+    }
+
+
+
+    #purple-box {
+        
+        border-top-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+    #mobile,
+    #desktop,
+    #container-image {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: block;
+    }
+
+
+    #container--information {
+        padding: 4.6em;
+        text-align: left;
+    }
+
+
+    #stats-preview-information #stats-title {
+        font-size: 2.6em;
+        margin-bottom: 1.1em;
+    }
+
+    
+    #stats-preview-information #stats-information {
+        margin-bottom: 1.4em;
+        padding: 0 2em 0 0;
+        font-size: 1.1em;
+        line-height: 21px;
+        color: var(--Slightly-transparent-white-main-paragraph);
+    }
+
+
+    
+    ul {
+        position: relative;
+        left: -65px;
+        display: flex;
+        width: 300px;
+    }
+
+ 
+}
+
+@media (min-width: 1440px) {
+    #stats-card-component {
+        margin-top: 15%;
+    }
+    
+}
