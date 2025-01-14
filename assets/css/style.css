@@ -75,7 +75,7 @@ main #stats-card-component {
 
 #stats-card-component {
     width: 330px;
-    height: 840px;
+    height: 845px;
     background-color: var(--Dark-desaturated-blue-card-background);
     margin: 45px auto;
     border-radius: 10px;
