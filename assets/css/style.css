@@ -20,17 +20,11 @@ ul {
     --Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
 }
 
-/*font-family 01
-- Weights: 400, 700
-*/
 
 .inter {
     font-family: "Inter", serif;
 }
 
-/*font-family 02
-- Weights: 400
-*/
 
 .lexend-deca {
     font-family: "Lexend Deca", serif;
@@ -40,23 +34,23 @@ ul {
 
 @keyframes animatioLoading {
     0% {
-     opacity: 0;
-     transform: scale(1);
+        opacity: 0;
+        transform: scale(1);
     }
 
     25% {
-       opacity: 0.2;
-       transform: scale(1.1);
+        opacity: 0.2;
+        transform: scale(1.1);
     }
 
-     25% {
-       opacity: 0.5;
-       transform: scale(0.5);
+    25% {
+        opacity: 0.5;
+        transform: scale(0.5);
     }
 
     100% {
         opacity: 1;
-     transform: scale(0.9);
+        transform: scale(0.9);
     }
 }
 
@@ -154,7 +148,7 @@ main #stats-card-component {
 }
 
 #block-information-stats ul {
-    margin: 1.1em;
+    margin: -1em auto 0 auto;
 }
 
 .stats-info {
@@ -204,9 +198,8 @@ main #stats-card-component {
     }
 
 
-
     #purple-box {
-        
+
         border-top-right-radius: 10px;
         border-top-left-radius: 0px;
         border-bottom-right-radius: 10px;
@@ -230,9 +223,12 @@ main #stats-card-component {
 
 
     #container--information {
-        padding: 4.6em;
+        /* padding: 4.6em; */
         text-align: left;
+        padding: 1.7em 4.6em;
     }
+
+
 
 
     #stats-preview-information #stats-title {
@@ -240,7 +236,7 @@ main #stats-card-component {
         margin-bottom: 1.1em;
     }
 
-    
+
     #stats-preview-information #stats-information {
         margin-bottom: 1.4em;
         padding: 0 2em 0 0;
@@ -250,7 +246,7 @@ main #stats-card-component {
     }
 
 
-    
+
     ul {
         position: relative;
         left: -65px;
@@ -258,12 +254,21 @@ main #stats-card-component {
         width: 300px;
     }
 
- 
+
 }
+
+
+@media (min-width: 1336px) {
+    #stats-card-component {
+        margin-top: 7%;
+    }
+
+}
+
 
 @media (min-width: 1440px) {
     #stats-card-component {
         margin-top: 15%;
     }
-    
+
 }
